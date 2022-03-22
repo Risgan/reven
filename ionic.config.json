@@ -1,0 +1,7 @@
+{
+  "name": "reven",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
