@@ -1,23 +1,66 @@
-<ion-header [translucent]="false" >
-  <ion-toolbar color="primary">
-    <ion-title>
-      Blanks
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <!-- <ion-toolbar color="tertiary">
+      <ion-icon src="../../assets/img/logo.svg" class="logoHome" slot="start"></ion-icon>
+    <ion-buttons slot="primary">
+      <ion-button class="buttonCarrito">
+        <ion-tab-button tab="carrito">
+          <ion-icon class="carritoCompras" name="cart-outline"></ion-icon>
+          <ion-badge>6</ion-badge>
+        </ion-tab-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Reven</ion-title>
+  </ion-toolbar> -->
 
-<ion-content [fullscreen]="false">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-icon src="../../assets/img/logo.svg" class="logoHome" slot="start"></ion-icon>
+  <!-- <ion-title>Reven</ion-title> -->
+  <ion-searchbar animated="true" placeholder="Busca aqui"></ion-searchbar>
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon slot="icon-only" ios="ellipsis-vertical" md="ellipsis-vertical"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<!-- <ion-content> -->
+  <!-- <ion-button>Hola</ion-button> -->
+  <!-- <div class="contenido">
+    <ion-router-outlet></ion-router-outlet>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-  <ion-button color="danger">Hola</ion-button>
+  </div> -->
+<!-- </ion-content> -->
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="store">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <ion-label>Tienda</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="map">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-label>Carrito</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="PCB">
+        <ion-icon name="qr-code-outline"></ion-icon>
+        <ion-label>PCB</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="cuenta">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-label>Mi Cuenta</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
 </ion-content>
 
 
