@@ -1,0 +1,30 @@
+ion-slides ion-slide{
+    align-items: flex-start;
+}
+
+ion-slides ion-slide ion-card{
+    width: 100%;
+}
+
+ion-slides ion-slide ion-button{
+    // position: fixed;
+    bottom: 0.2rem;
+    right: 0.2rem;
+}
+
+ion-card{
+    // width: 100%;
+    font-size: 0.2rem;
+}   
+
+.item1{
+    width: 50%;
+}
+
+.content1{
+    display: flex;
+}
+
+ion-card ion-input{
+    text-align: center;
+}

@@ -1,0 +1,129 @@
+<ion-content>
+  <form [formGroup]="formLogin"></form>
+  <ion-label>
+    Datos de fabricacion
+  </ion-label>
+  <ion-card>
+    <ion-card-content class="content1d">    
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-item class="item1d">
+                <ion-label position="fixed">Alto(mm):</ion-label>
+                <ion-input type="number" min="1" max="150" placeholder="1-150 mm"></ion-input>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item class="item1d">
+                <ion-label fixed>Ancho(mm):</ion-label>
+                <ion-input type="number" min="1" max="150" placeholder="1-150 mm"></ion-input>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item class="item1d">
+                <ion-label fixed>Cantidad:</ion-label>
+                <ion-input type="number" min="1" max="150" placeholder="1-150 mm"></ion-input>
+              </ion-item>
+            </ion-card>
+            <ion-item>
+              <ion-img src="./../../../../../assets/img/example01.png"></ion-img>
+              <ion-img src="./../../../../../assets/img/example02.png"></ion-img>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    
+    <ion-card-content class="content1d">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-item class="item1d">
+                <ion-radio-group value="biff">
+                  <ion-list-header>
+                    <ion-label>Capas</ion-label>
+                  </ion-list-header>
+                  <ion-item>
+                    <ion-item>
+                      <ion-label>1 Capa</ion-label>
+                      <ion-radio slot="start" value="biff"></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>2 Capas</ion-label>
+                      <ion-radio slot="start" value="griff"></ion-radio>
+                    </ion-item>
+                  </ion-item>
+                  
+                </ion-radio-group>
+              </ion-item>
+            </ion-card>
+            <ion-item>
+              <ion-img src="./../../../../../assets/img/pcbSimple1.png"></ion-img>
+            </ion-item>
+            <ion-card>
+              <ion-item>
+                <ion-label>Antisolder</ion-label>
+                <ion-select value="notifications" interface="action-sheet">
+                  <ion-select-option value="enable">Verde</ion-select-option>
+                  <ion-select-option value="rojo">Rojo</ion-select-option>
+                  <ion-select-option value="azul">Azul</ion-select-option>
+                  <ion-select-option value="blanco">Blanco</ion-select-option>
+                  <ion-select-option value="negro">Negro</ion-select-option>
+                  <ion-select-option value="ninguno">Ninguno</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-img src="./../../../../../assets/img/pcbSimple1.png"></ion-img>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>Screen</ion-label>
+                <ion-select value="notifications" interface="action-sheet" [cancelText]="''">
+                  <ion-select-option value="enable">Verde</ion-select-option>
+                  <ion-select-option value="rojo">Rojo</ion-select-option>
+                  <ion-select-option value="azul">Azul</ion-select-option>
+                  <ion-select-option value="blanco">Blanco</ion-select-option>
+                  <ion-select-option value="negro">Negro</ion-select-option>
+                  <ion-select-option value="ninguno">Ninguno</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-img src="./../../../../../assets/img/screen-1.png"></ion-img>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>Cargar archivos GERBER</ion-label>
+                            
+              </ion-item>
+              <ion-item>
+                <ion-button>
+                  <ion-label>Subir archivos </ion-label>
+                  <ion-icon name="arrow-up-outline"></ion-icon>
+                </ion-button>
+              </ion-item>    
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>Costo Fabricacion</ion-label>                            
+              </ion-item>
+              <ion-item>
+                <ion-label>La PCB</ion-label>  
+              </ion-item>    
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    <ion-button>
+      <ion-label>Subir archivos </ion-label>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </ion-button>
+  </ion-card>
+  
+  
+</ion-content>

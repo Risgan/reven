@@ -1,0 +1,23 @@
+<!-- <ion-content [fullscreen]="true">
+  
+
+<ion-router-outlet></ion-router-outlet>
+
+
+
+</ion-content>
+ -->
+
+<ion-content class="contenido">
+  <app-banner></app-banner>
+</ion-content>
+
+  <div *ngFor="let item of prueba">
+    <ion-button>
+      {{item.name}}
+    </ion-button>
+    
+  </div>
+
+<ion-button (click)="ok()">Hola</ion-button>
+<ion-button (click)="add()">add</ion-button>

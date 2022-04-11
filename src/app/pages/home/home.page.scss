@@ -1,0 +1,54 @@
+ion-toolbar{
+  height: 4rem;
+  display: flex;
+}
+
+ion-toolbar ion-img{
+  width: 3rem;
+  background: var(--blue-dark);
+  padding: 0.6rem;
+  border-radius: 5rem;
+
+}
+
+.logoHome{
+  margin-left: 0.3rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: var(--blue-dark);
+  padding: 0.6rem;
+  border-radius: 5rem;
+
+}
+
+ion-buttons{
+  height: 100%;
+}
+
+// ion-buttons ion-button{
+// //  height: 100%;
+// //  width: 4.0rem !important;
+// //  background: red;
+// }
+
+.buttonCarrito{
+  width: 3rem;
+  height: 3rem;
+}
+
+.carritoCompras{
+  font-size: 2.5rem;
+}
+
+ion-buttons ion-button ion-badge{
+  // background: red;
+  position: fixed;
+}
+
+ion-buttons ion-button ion-icon{
+  font-size: 1.6rem;
+}
+
+ion-buttons ion-button ion-tab-button{
+  font-size: 3.6rem;
+}

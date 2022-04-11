@@ -1,0 +1,107 @@
+<ion-content class="contenido">
+  
+  <ion-segment (ionChange)="segmentChanged($event)" color="tertiary" [value]="tabSelected">
+    <ion-segment-button value="lista" >
+      <ion-label>Lista PCB</ion-label>
+      <ion-icon name="list-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="request">
+      <ion-label>Fabricar PCB</ion-label>
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+<div *ngIf="tabSelected=='lista'" style="height: 83%; width: 100%;">
+  <app-pcb-lista></app-pcb-lista>
+</div>
+
+<div *ngIf="tabSelected=='request'" style="height: 83%; width: 100%;">
+  <app-pcb-request></app-pcb-request>
+</div>
+  <!-- <div> -->
+  <!-- </div> -->
+
+  <!-- <ion-slides #myslides>
+    <ion-slide>
+      
+      <ion-list>
+        <ion-list-header color="primary">
+          <ion-label>Lista de PCB</ion-label>
+        </ion-list-header>
+        <ion-item detail="">
+          <ion-icon></ion-icon>
+          <ion-label></ion-label>
+        </ion-item>
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+          <ion-fab-button>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-list>
+
+    </ion-slide>
+    <ion-slide>
+      <ion-card style="width: 100%;">
+        <ion-card-header>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-button style="position: fixed;
+      bottom: 4rem;
+      right: 0.2rem;" (click)="swipeNext(slides)">Siguiente</ion-button>
+       
+    </ion-slide>
+    <ion-slide>
+      <button>2</button>
+    </ion-slide>
+    <ion-slide>
+      <button>3</button>
+    </ion-slide>
+
+   </ion-slides> -->
+   <!-- <ion-button style="    bottom: 1rem;
+   position: fixed;" (click)="swipeNext(myslides)">Next</ion-button> -->
+
+  <!--<ion-slides pager="true" #theSlides>
+    <ion-slide class="step-one" (click)="move(theSlides)">
+        <ion-img src="/assets/icon/favicon.png"></ion-img>
+        <h1>Heading 1</h1 >
+        <p>Text</p>
+    </ion-slide>
+    
+    <ion-slide class="step-two" (click)="move2(theSlides)">
+        <ion-img src="/assets/icon/favicon.png"></ion-img>
+        <h1>Heading 2</h1>
+        <p>Text</p>
+    </ion-slide>
+    
+    <ion-slide class="step-three" >
+        <ion-img src="/assets/icon/favicon.png"></ion-img>
+        <h1>Heading 3</h1>
+        <p>Text</p>
+    
+        <ion-button>FINISH TUTORIAL!</ion-button>
+    </ion-slide>
+  </ion-slides> -->
+
+</ion-content>
+
+
+
+<!-- <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab> -->
+
+
+
+<!-- <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="settings"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button><ion-icon name="arrow-back-outline"></ion-icon></ion-fab-button>
+  </ion-fab-list>
+</ion-fab> -->
